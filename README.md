@@ -110,7 +110,7 @@ This project is licensed under the **MIT License**. See the LICENSE file for det
 ## Research Paper
 
 The detailed research paper on this project can be found here:  
-[Spam Detection Using Decision Tree and TF-IDF](docs/Spam_Detection_Paper.pdf)
+[Spam Detection Using Decision Tree and TF-IDF]([docs/Spam_Detection_Paper.pdf](https://github.com/saberfazliahmadi/spam-detection-tfidf/blob/main/docs/Spam_Detection_Paper.md))
 
 ---
 
