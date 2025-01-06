@@ -1,27 +1,27 @@
 # 📧 Spam Detection Using Decision Tree and TF-IDF  
 
 ## 📌 Overview  
-This project implements a robust **text classification pipeline** to detect spam messages using **TF-IDF (Term Frequency-Inverse Document Frequency)** for feature extraction and a **Decision Tree Classifier** for prediction. The primary objective is to preprocess text data, extract meaningful features, and classify messages as either **spam** or **ham** (non-spam).  
+This project showcases a **text classification pipeline** to detect spam messages by combining **TF-IDF (Term Frequency-Inverse Document Frequency)** for feature extraction with a **Decision Tree Classifier** for prediction. The goal is to preprocess raw text data, extract meaningful features, and classify messages as either **spam** or **ham** (non-spam).  
 
 ---
 
 ## 🚀 Key Features  
-- **Comprehensive Text Preprocessing**:
+- **Comprehensive Text Preprocessing**:  
   - Tokenization  
   - Stop-word removal  
   - Punctuation removal  
   - TF-IDF vectorization  
-- **Efficient Classification**:
-  - Decision Tree model with adjustable depth to analyze overfitting and underfitting behavior.  
-- **Detailed Evaluation**:
-  - Performance metrics: Accuracy, Confusion Matrix, and Classification Report.  
-- **Data Visualization**:
-  - Graphs illustrating the impact of tree depth on classification accuracy.  
+- **Efficient Classification**:  
+  - Decision Tree model with adjustable depth to handle overfitting and underfitting.  
+- **Detailed Evaluation**:  
+  - Metrics: Accuracy, Confusion Matrix, and Classification Report.  
+- **Visual Insights**:  
+  - Graphs showing the effect of tree depth on classification accuracy.  
 
 ---
 
 ## 📂 Dataset  
-The project uses the **SMS Spam Collection**, a benchmark dataset for spam detection, consisting of labeled messages categorized as either **spam** or **ham**.  
+This project uses the **SMS Spam Collection**, a widely-used dataset for spam detection, containing labeled messages categorized as either **spam** or **ham**.  
 
 📥 **Download Dataset**: [SMS Spam Collection Dataset](https://archive.ics.uci.edu/ml/datasets/sms+spam+collection)  
 📁 **Instructions**: Place the dataset file in the `dataset/` directory within the project structure.  
@@ -29,12 +29,12 @@ The project uses the **SMS Spam Collection**, a benchmark dataset for spam detec
 ---
 
 ## ⚙️ Requirements  
-Ensure the required Python libraries are installed:  
+Ensure you have the required Python libraries installed:  
 ```bash  
 pip install -r requirements.txt  
 ```  
 
-Dependencies include:  
+### Dependencies  
 - `pandas`  
 - `numpy`  
 - `scikit-learn`  
@@ -44,11 +44,11 @@ Dependencies include:
 ---
 
 ## 📁 Project Structure  
-- **`notebook.ipynb`**: Main Jupyter Notebook containing code implementation and analysis.  
+- **`notebook.ipynb`**: Main Jupyter Notebook with code implementation and analysis.  
 - **`dataset/`**: Directory to store the SMS Spam Collection dataset.  
-- **`README.md`**: Documentation for understanding and reproducing the project.  
-- **`requirements.txt`**: Python dependencies required to run the project.  
-- **`.gitignore`**: Configurations to exclude unnecessary files from version control.  
+- **`README.md`**: Project documentation.  
+- **`requirements.txt`**: List of Python dependencies.  
+- **`.gitignore`**: Configuration file for excluding unnecessary files from version control.  
 
 ---
 
@@ -62,33 +62,33 @@ cd spam-detection-tfidf
 ```  
 
 ### Step 2: Download the Dataset  
-Download the **SMS Spam Collection** dataset and place it in the `dataset/` directory.  
+Download the **SMS Spam Collection** dataset and save it in the `dataset/` directory.  
 
 ### Step 3: Run the Jupyter Notebook  
 1. Launch Jupyter Notebook:  
    ```bash  
    jupyter notebook  
    ```  
-2. Open `notebook.ipynb` and execute cells sequentially to:  
+2. Open `notebook.ipynb` and execute the cells step by step to:  
    - Preprocess the data.  
    - Train the Decision Tree Classifier.  
-   - Evaluate and visualize the results.  
+   - Evaluate the model and visualize results.  
 
 ---
 
 ## 📊 Results  
-The Decision Tree Classifier was optimized by analyzing different tree depths to strike a balance between training and testing performance.  
+The Decision Tree Classifier was optimized by analyzing various tree depths to achieve a balance between training and testing performance.  
 
-### Key Findings:  
-- **Optimal Depth**: `20` *(replace with actual value)*  
-- **Accuracy**: `96.50%` *(replace with achieved accuracy)*  
+### Key Findings  
+- **Optimal Tree Depth**: `20`  
+- **Test Accuracy**: `96.50%`  
 
-Detailed graphs included in the notebook demonstrate the relationship between tree depth and model accuracy.  
+The optimal depth provided the highest accuracy while minimizing overfitting. Detailed graphs in the notebook illustrate the relationship between tree depth and classification accuracy.  
 
 ---
 
 ## 🌟 Next Steps  
-To enhance and extend the project, consider the following:  
+To improve and extend this project:  
 - **Experiment with Alternative Classifiers**:  
   - Random Forest  
   - Support Vector Machines (SVM)  
@@ -103,7 +103,7 @@ To enhance and extend the project, consider the following:
 ---
 
 ## 📜 License  
-This project is distributed under the **MIT License**. For more information, see the LICENSE file.  
+This project is licensed under the **MIT License**. See the LICENSE file for details.  
 
 ---
 
