@@ -80,8 +80,8 @@ Download the **SMS Spam Collection** dataset and place it in the `dataset/` dire
 The Decision Tree Classifier was optimized by analyzing different tree depths to strike a balance between training and testing performance.  
 
 ### Key Findings:  
-- **Optimal Depth**: `X` *(replace with actual value)*  
-- **Accuracy**: `XX.XX%` *(replace with achieved accuracy)*  
+- **Optimal Depth**: `20` *(replace with actual value)*  
+- **Accuracy**: `96.50%` *(replace with achieved accuracy)*  
 
 Detailed graphs included in the notebook demonstrate the relationship between tree depth and model accuracy.  
 
