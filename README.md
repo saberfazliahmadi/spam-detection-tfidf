@@ -1,42 +1,54 @@
 # 📧 Spam Detection Using Decision Tree and TF-IDF
 
 ## 📌 Overview
-This project showcases a **text classification pipeline** to detect spam messages by combining **TF-IDF (Term Frequency-Inverse Document Frequency)** for feature extraction with a **Decision Tree Classifier** for prediction. The goal is to preprocess raw text data, extract meaningful features, and classify messages as either **spam** or **ham** (non-spam).
+This project presents a **text classification framework** to detect spam messages using **TF-IDF (Term Frequency-Inverse Document Frequency)** for feature extraction and a **Decision Tree Classifier** for prediction. The framework achieves a high accuracy of **96.50%** by balancing model complexity to optimize performance. 
 
 ---
 
 ## 🚀 Key Features
-- **Comprehensive Text Preprocessing**:
+- **Robust Text Preprocessing**:
   - Tokenization
   - Stop-word removal
   - Punctuation removal
-  - TF-IDF vectorization
-- **Efficient Classification**:
-  - Decision Tree model with adjustable depth to handle overfitting and underfitting.
-- **Detailed Evaluation**:
-  - Metrics: Accuracy, Confusion Matrix, and Classification Report.
-- **Visual Insights**:
-  - Graphs showing the effect of tree depth on classification accuracy.
+- **TF-IDF Vectorization**:
+  - Converts raw text into numerical features for classification.
+- **Decision Tree Classifier**:
+  - Tuned for optimal performance, analyzing tree depths to prevent overfitting and underfitting.
+- **Comprehensive Evaluation**:
+  - Metrics: Confusion Matrix, Classification Report, Accuracy.
+- **Visualization**:
+  - Graphs depicting the impact of tree depth on classification accuracy.
 
 ---
 
 ## 📂 Dataset
+The **SMS Spam Collection** dataset is used, a widely recognized benchmark for spam detection.  
+- **Statistics**:
+  - Total messages: 5,574  
+  - Spam: 13.4%  
+  - Ham (non-spam): 86.6%  
 
-This project uses the **SMS Spam Collection**, a widely-used dataset for spam detection, containing labeled messages categorized as either **spam** or **ham**.
-<br>
-<br>
-📥 **Download Dataset**:
-<br>
-[SMS Spam Collection Dataset](https://archive.ics.uci.edu/ml/datasets/sms+spam+collection)
-<br>
-📁 **Instructions**:
-<br>
-Place the dataset file in the `dataset/` directory within the project structure.
-<br>
+📥 **Dataset Link**: [SMS Spam Collection Dataset](https://archive.ics.uci.edu/ml/datasets/sms+spam+collection)  
+📁 **Instructions**: Save the dataset in the `dataset/` directory.
+
+---
+
+## 📚 Methodology
+### 1. **Text Preprocessing**:
+   - Tokenization: Breaks text into words.
+   - Stop-word Removal: Eliminates irrelevant words like "and," "the."
+   - Punctuation Removal: Cleans special characters.
+### 2. **Feature Extraction**:
+   - TF-IDF Vectorization: Computes the significance of words in the dataset.
+### 3. **Classification**:
+   - **Decision Tree Classifier**:
+     - Non-parametric model tuned for optimal depth.
+     - Tested across depths from 1 to 100 to balance complexity and performance.
+
 ---
 
 ## ⚙️ Requirements
-Ensure you have the required Python libraries installed:
+Install necessary Python libraries:
 ```bash
 pip install -r requirements.txt
 ```
@@ -51,77 +63,75 @@ pip install -r requirements.txt
 ---
 
 ## 📁 Project Structure
-- **`notebook.ipynb`**: Main Jupyter Notebook with code implementation and analysis.
-- **`dataset/`**: Directory to store the SMS Spam Collection dataset.
+- **`notebook.ipynb`**: Contains code implementation and analysis.
+- **`dataset/`**: Directory for the dataset.
 - **`README.md`**: Project documentation.
-- **`requirements.txt`**: List of Python dependencies.
-- **`.gitignore`**: Configuration file for excluding unnecessary files from version control.
+- **`requirements.txt`**: Python dependencies.
+- **`.gitignore`**: Excludes unnecessary files.
 
 ---
 
 ## 🛠️ How to Use
-
-### Step 1: Clone the Repository
-Clone this repository to your local system:
-```bash
-git clone https://github.com/your-username/spam-detection-tfidf.git
-cd spam-detection-tfidf
-```
-
-### Step 2: Download the Dataset
-Download the **SMS Spam Collection** dataset and save it in the `dataset/` directory.
-
-### Step 3: Run the Jupyter Notebook
-1. Launch Jupyter Notebook:
+1. **Clone the Repository**:
    ```bash
-   jupyter notebook
+   git clone https://github.com/saberfazliahmadi/spam-detection-tfidf.git
+   cd spam-detection-tfidf
    ```
-2. Open `notebook.ipynb` and execute the cells step by step to:
-   - Preprocess the data.
-   - Train the Decision Tree Classifier.
-   - Evaluate the model and visualize results.
+2. **Download Dataset**: Save the SMS Spam Collection in the `dataset/` folder.
+3. **Run Notebook**:
+   - Launch Jupyter Notebook:
+     ```bash
+     jupyter notebook
+     ```
+   - Open `notebook.ipynb` and execute cells to:
+     - Preprocess data.
+     - Train and evaluate the Decision Tree Classifier.
+     - Visualize the results.
 
 ---
 
 ## 📊 Results
-The Decision Tree Classifier was optimized by analyzing various tree depths to achieve a balance between training and testing performance.
+### Key Findings:
+- **Optimal Tree Depth**: 20  
+- **Accuracy**: 96.50%  
 
-### Key Findings
-- **Optimal Tree Depth**: `20`
-- **Test Accuracy**: `96.50%`
-
-The optimal depth provided the highest accuracy while minimizing overfitting. Detailed graphs in the notebook illustrate the relationship between tree depth and classification accuracy.
+Graphs illustrate the balance between model complexity and performance, highlighting the impact of increasing tree depth.
 
 ---
 
 ## 🌟 Next Steps
-To improve and extend this project:
-- **Experiment with Alternative Classifiers**:
-  - Random Forest
-  - Support Vector Machines (SVM)
-- **Explore Larger Datasets**:
-  - [Enron-Spam Corpus](http://www.aueb.gr/users/ion/data/enron-spam/)
-  - [TREC 2007 Public Corpus](http://plg.uwaterloo.ca/~gvcormac/treccorpus07/)
-- **Incorporate Advanced Feature Extraction Techniques**:
-  - Word2Vec
-  - GloVe
-  - BERT embeddings
+- **Enhancements**:
+  - Experiment with Random Forest, SVM, and BERT embeddings.
+  - Scale the model to larger datasets like the Enron-Spam Corpus.
+- **Advanced Techniques**:
+  - Use feature representations like Word2Vec, GloVe, or BERT.
 
 ---
 
 ## 📜 License
-This project is licensed under the **MIT License**. See the LICENSE file for details.
+Licensed under the **MIT License**. See the LICENSE file for details.
 
 ---
 
-## Research Paper
-
-The detailed research paper on this project can be found here:
+## 📖 Research Paper
+The detailed research paper for this project is available:  
 [Spam Detection Using Decision Tree and TF-IDF](https://github.com/saberfazliahmadi/spam-detection-tfidf/blob/main/docs/Spam_Detection_Paper.md)
 
 ---
 
 ## ✍️ Authors
-- **Saber Fazliamadi**
+- **Saber Fazliahmadi**  
 - **Muhammad Usman Hussain**
 
+---
+
+## 📉 Visual Insights
+### Accuracy vs Tree Depth
+Below is an example of visualizations available in the notebook:
+
+- **Training vs Testing Accuracy**:
+  ![Tree Depth vs Accuracy](path/to/image1.png)
+
+- **Impact of Deeper Trees**:
+  ![Tree Depth Impact](path/to/image2.png)
+```
