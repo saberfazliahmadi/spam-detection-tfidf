@@ -21,13 +21,15 @@ This project showcases a **text classification pipeline** to detect spam message
 ---
 
 ## 📂 Dataset
----
+
 This project uses the **SMS Spam Collection**, a widely-used dataset for spam detection, containing labeled messages categorized as either **spam** or **ham**.
 <br>
 <br>
-📥 **Download Dataset**: [SMS Spam Collection Dataset](https://archive.ics.uci.edu/ml/datasets/sms+spam+collection)
+📥 **Download Dataset**: 
+[SMS Spam Collection Dataset](https://archive.ics.uci.edu/ml/datasets/sms+spam+collection)
 <br>
-📁 **Instructions**: Place the dataset file in the `dataset/` directory within the project structure.
+📁 **Instructions**: 
+Place the dataset file in the `dataset/` directory within the project structure.
 <br>
 ---
 
