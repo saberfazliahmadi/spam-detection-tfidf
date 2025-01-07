@@ -130,8 +130,8 @@ The detailed research paper for this project is available:
 Below is an example of visualizations available in the notebook:
 
 - **Training vs Testing Accuracy**:
-  ![Tree Depth vs Accuracy](path/to/image1.png)
+  ![Tree Depth vs Accuracy](https://github.com/saberfazliahmadi/spam-detection-tfidf/images/Tree_Depth_vs_Accuracy.jpg)
 
-- **Impact of Deeper Trees**:
-  ![Tree Depth Impact](path/to/image2.png)
+- **Effect of Tree Depth on Accuracy 1-100**:
+  ![Tree Depth Impact](https://github.com/saberfazliahmadi/spam-detection-tfidf/images/Effect_of_Tree_Depth_on_Accuracy_1_100.jpg)
 ```
