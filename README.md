@@ -21,6 +21,7 @@ This project showcases a **text classification pipeline** to detect spam message
 ---
 
 ## 📂 Dataset
+---
 This project uses the **SMS Spam Collection**, a widely-used dataset for spam detection, containing labeled messages categorized as either **spam** or **ham**.
 <br>
 <br>
