@@ -102,7 +102,7 @@ Here's the updated README code that incorporates all the listed photos into the 
 
 ### Confusion Matrices
 - **Logistic Regression on SMS Spam Collection Dataset**
-  ![Logistic Regression Confusion Matrix (SMS Spam Collection)](images/Logistic_Regression_Confusion_Matrix_SMSSpamCollection.jpg)
+  ![Logistic Regression Confusion Matrix (SMS Spam Collection)](images/Logistic Regression Confusion Matrix SMSSpamCollection.jpg)
 
 - **Logistic Regression on Enron Dataset**
   ![Logistic Regression Confusion Matrix (Enron)](images/Logistic_Regression_Confusion_Matrix.jpg)
