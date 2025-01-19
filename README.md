@@ -165,8 +165,8 @@ project-directory/
    ![Accuracy Comparison](https://github.com/saberfazliahmadi/spam-detection-tfidf/blob/main/images/accuracy_comparison.png)
  
 3. **Effect of Tree Depth on Accuracy**:
-<br>
 **👇Enron Dataset👇**
+
    ![Tree Depth Impact](https://github.com/saberfazliahmadi/spam-detection-tfidf/blob/main/images/Effect_of_Tree_Depth_on_Accuracy.png)
 
 **👇SMS Spam Collection Dataset👇**
