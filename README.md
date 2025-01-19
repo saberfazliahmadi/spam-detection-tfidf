@@ -80,7 +80,7 @@ Here's the updated README code that incorporates all the listed photos into the 
 
 ### Class Distributions
 - **SMS Spam Collection Dataset**  
-  ![SMSSPAMCOLLECTION Class Distribution](images/SMSSPAMCOLLECTION%20Class%20Distribution.jpg)
+  ![SMSSPAMCOLLECTION Class Distribution]([images/SMSSPAMCOLLECTION%20Class%20Distribution.jpg](https://github.com/saberfazliahmadi/spam-detection-tfidf/blob/main/images/SMSSPAMCOLLECTION%20CLass%20Distribution.jpg))
 
 - **Enron Dataset**  
   ![Enron Class Distribution](images/Enron%20Class%20Distribution.jpg)
