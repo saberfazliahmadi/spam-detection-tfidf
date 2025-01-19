@@ -80,7 +80,7 @@ Here's the updated README code that incorporates all the listed photos into the 
 
 ### Class Distributions
 - **SMS Spam Collection Dataset**  
-  ![SMS Spam Collection Class Distribution](images/SMSSPAMCOLLECTION%20Class%20Distribution.jpg)
+  ![SMSSPAMCOLLECTION Class Distribution](images/SMSSPAMCOLLECTION%20Class%20Distribution.jpg)
 
 - **Enron Dataset**  
   ![Enron Class Distribution](images/Enron%20Class%20Distribution.jpg)
@@ -115,7 +115,7 @@ Here's the updated README code that incorporates all the listed photos into the 
 
 ### Impact of Tree Depth on Accuracy
 - **Depth (1 to 20)**  
-  ![Effect of Tree Depth (1 to 20)](images/Effect%20of%20Tree%20Depth%20(1%20to%2020)%20on%20Accuracy.jpg)
+ ![Effect of Tree Depth (1 to 20) on Accuracy](images/Effect%20of%20Tree%20Depth%20(1%20to%2020)%20on%20Accuracy.jpg)
 
 - **Depth (1 to 100)**  
   ![Effect of Tree Depth (1 to 100)](images/Effect%20of%20Tree%20(1%20to%20100)%20on%20Accuracy.jpg)
