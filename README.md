@@ -41,7 +41,7 @@ This project delivers a **robust spam detection framework** that leverages **TF-
 - **Statistics**:
   - Total messages: 33,716
   - Approx. Spam: 50%
-- 🔗 [Download Link]([https://www.kaggle.com/datasets/venky73/enron-spam-mails](https://github.com/MWiechmann/enron_spam_data?tab=readme-ov-file))
+- 🔗 [Download Link](https://github.com/MWiechmann/enron_spam_data?tab=readme-ov-file)
 
 📁 **Instructions**: Save both datasets in the `dataset/` directory of the project.
 
