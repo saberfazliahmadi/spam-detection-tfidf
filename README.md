@@ -164,11 +164,11 @@ project-directory/
 2. **Accuracy Comparison Across Models**:
    ![Accuracy Comparison](https://github.com/saberfazliahmadi/spam-detection-tfidf/blob/main/images/accuracy_comparison.png)
    
-   ![Effects of 3 depth on Accuracy Comparison 1_20](https://github.com/saberfazliahmadi/spam-detection-tfidf/blob/main/images/Tree_Depth_vs_Accuracy.jpg)
-   
 3. **Effect of Tree Depth on Accuracy**:
    ![Tree Depth Impact](https://github.com/saberfazliahmadi/spam-detection-tfidf/blob/main/images/Effect_of_Tree_Depth_on_Accuracy.png)
 
+![Effects of 3 depth on Accuracy Comparison 1_20](https://github.com/saberfazliahmadi/spam-detection-tfidf/blob/main/images/Tree_Depth_vs_Accuracy.jpg)
+    
    ![1_100 Depth Impact](https://github.com/saberfazliahmadi/spam-detection-tfidf/blob/main/images/Effect_of_Tree_Depth_on_Accuracy_1_100.jpg)
 
 ---
