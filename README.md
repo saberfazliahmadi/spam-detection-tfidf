@@ -1,7 +1,10 @@
 # 📧 Spam Detection Using Logistic Regression, Decision Tree, and TF-IDF
 
 ## 📀 Overview
-This project delivers a **robust spam detection framework** that leverages **TF-IDF (Term Frequency-Inverse Document Frequency)** for text feature extraction and employs **Logistic Regression** and **Decision Tree Classifiers** for message classification. The model is evaluated on two datasets—**SMS Spam Collection** and **Enron Spam Dataset**—to ensure generalizability across different data sources. With advanced preprocessing, cross-dataset evaluation, and insightful visualizations, this project achieves high accuracy while offering a clear path for further improvement.
+Spam messages and emails pose a significant challenge in maintaining communication efficiency and data security. This project addresses the problem by building a **robust spam detection framework** that combines **TF-IDF** feature extraction with **Logistic Regression** and **Decision Tree Classifiers**. 
+
+To evaluate the effectiveness and generalizability of the framework, experiments are conducted on two datasets: **SMS Spam Collection** and **Enron Spam Dataset**. The project delivers key insights into model performance, cross-dataset generalization, and visualizations, achieving high accuracy while paving the way for future advancements.
+
 
 ---
 
