@@ -72,9 +72,27 @@ Save both datasets in the `dataset/` directory of the project.
 
 ---
 
+Here's the updated README code that incorporates all the listed photos into the appropriate sections:
+
+---
+
 ## 📊 Results
 
-### Accuracy Summary
+### Class Distributions
+- **SMS Spam Collection Dataset**
+  ![SMS Spam Collection Class Distribution](images/SMSSPAMCOLLECTION_Class_Distribution.jpg)
+
+- **Enron Dataset**
+  ![Enron Class Distribution](images/Enron_Class_Distribution.jpg)
+
+### Text Length Distributions
+- **SMS Spam Collection Dataset**
+  ![SMS Spam Collection Text Length Distribution](images/SMSSpamCollection_Text_Lenght_Distribution.jpg)
+
+- **Enron Dataset**
+  ![Enron Text Length Distribution](images/Enron_Text_Length_Distribution.jpg)
+
+### Accuracy Results by Model
 | Model                | Dataset                 | Accuracy (%) |
 |----------------------|-------------------------|--------------|
 | Logistic Regression  | SMS Spam Collection    | 95.96        |
@@ -83,28 +101,52 @@ Save both datasets in the `dataset/` directory of the project.
 | Decision Tree        | Enron Dataset          | 51.60        |
 
 ### Confusion Matrices
+- **Logistic Regression on SMS Spam Collection Dataset**
+  ![Logistic Regression Confusion Matrix (SMS Spam Collection)](images/Logistic_Regression_Confusion_Matrix_SMSSpamCollection.jpg)
 
-#### Logistic Regression (SMS Spam Collection)
-![Confusion Matrix](images/confusion_matrix_log_sms.png)
+- **Logistic Regression on Enron Dataset**
+  ![Logistic Regression Confusion Matrix (Enron)](images/Logistic_Regression_Confusion_Matrix.jpg)
 
-#### Logistic Regression (Enron Dataset)
-![Confusion Matrix](images/confusion_matrix_log_enron.png)
+- **Decision Tree on SMS Spam Collection Dataset**
+  ![Decision Tree Confusion Matrix (SMS Spam Collection)](images/Decision_Tree_Confusion_Matrix_SMSSpamCollection.jpg)
 
-#### Decision Tree (SMS Spam Collection)
-![Confusion Matrix](images/confusion_matrix_tree_sms.png)
+- **Decision Tree on Enron Dataset**
+  ![Decision Tree Confusion Matrix (Enron)](images/Decision_Tree_Confusion_Matrix_Enron.jpg)
 
-#### Decision Tree (Enron Dataset)
-![Confusion Matrix](images/confusion_matrix_tree_enron.png)
+### Impact of Tree Depth on Accuracy
+- **Depth (1 to 20)**
+  ![Effect of Tree Depth (1 to 20)](images/Effect_of_Tree_Depth_(1_to_20)_on_Accuracy.jpg)
 
-### Impact of Tree Depth on Decision Tree Performance
-
-1. **Effect of Depth (1–20):**
-   ![Tree Depth (1–20)](images/tree_depth_1_20.png)
-
-2. **Effect of Depth (1–100):**
-   ![Tree Depth (1–100)](images/tree_depth_1_100.png)
+- **Depth (1 to 100)**
+  ![Effect of Tree Depth (1 to 100)](images/Effect_of_Tree_(1_to_100)_on_Accuracy.jpg)
 
 ---
+
+### Updated Project Structure
+
+```
+project-directory/
+|— notebook.ipynb       # Contains code and detailed analysis
+|— dataset/            # Directory for datasets
+|— images/             # Stores all visualizations
+    |— SMSSPAMCOLLECTION_Class_Distribution.jpg
+    |— Enron_Class_Distribution.jpg
+    |— SMSSpamCollection_Text_Lenght_Distribution.jpg
+    |— Enron_Text_Length_Distribution.jpg
+    |— Logistic_Regression_Confusion_Matrix_SMSSpamCollection.jpg
+    |— Logistic_Regression_Confusion_Matrix.jpg
+    |— Decision_Tree_Confusion_Matrix_SMSSpamCollection.jpg
+    |— Decision_Tree_Confusion_Matrix_Enron.jpg
+    |— Effect_of_Tree_Depth_(1_to_20)_on_Accuracy.jpg
+    |— Effect_of_Tree_(1_to_100)_on_Accuracy.jpg
+|— README.md           # Project documentation
+|— requirements.txt    # Dependencies for installation
+|— docs/               # Research paper and additional documents
+|— .gitignore          # Excludes unnecessary files
+```
+
+---
+
 
 ## ⚙️ Requirements
 
