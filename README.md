@@ -79,18 +79,18 @@ Here's the updated README code that incorporates all the listed photos into the 
 ## 📊 Results
 
 ### Class Distributions
-- **SMS Spam Collection Dataset**
-  ![SMS Spam Collection Class Distribution](images/SMSSPAMCOLLECTION Class Distribution.jpg)
+- **SMS Spam Collection Dataset**  
+  ![SMS Spam Collection Class Distribution](images/SMSSPAMCOLLECTION%20Class%20Distribution.jpg)
 
-- **Enron Dataset**
-  ![Enron Class Distribution](images/Enron Class Distribution.jpg)
+- **Enron Dataset**  
+  ![Enron Class Distribution](images/Enron%20Class%20Distribution.jpg)
 
 ### Text Length Distributions
-- **SMS Spam Collection Dataset**
-  ![SMS Spam Collection Text Length Distribution](images/SMSSpamCollection Text Lenght Distribution.jpg)
+- **SMS Spam Collection Dataset**  
+  ![SMS Spam Collection Text Length Distribution](images/SMSSpamCollection%20Text%20Lenght%20Distribution.jpg)
 
-- **Enron Dataset**
-  ![Enron Text Length Distribution](images/Enron Text Length Distribution.jpg)
+- **Enron Dataset**  
+  ![Enron Text Length Distribution](images/Enron%20Text%20Length%20Distribution.jpg)
 
 ### Accuracy Results by Model
 | Model                | Dataset                 | Accuracy (%) |
@@ -101,24 +101,24 @@ Here's the updated README code that incorporates all the listed photos into the 
 | Decision Tree        | Enron Dataset          | 51.60        |
 
 ### Confusion Matrices
-- **Logistic Regression on SMS Spam Collection Dataset**
-  ![Logistic Regression Confusion Matrix (SMS Spam Collection)](images/Logistic Regression Confusion Matrix SMSSpamCollection.jpg)
+- **Logistic Regression on SMS Spam Collection Dataset**  
+  ![Logistic Regression Confusion Matrix (SMS Spam Collection)](images/Logistic%20Regression%20Confusion%20Matrix%20SMSSpamCollection.jpg)
 
-- **Logistic Regression on Enron Dataset**
-  ![Logistic Regression Confusion Matrix (Enron)](images/Logistic Regression Confusion Matrix.jpg)
+- **Logistic Regression on Enron Dataset**  
+  ![Logistic Regression Confusion Matrix (Enron)](images/Logistic%20Regression%20Confusion%20Matrix.jpg)
 
-- **Decision Tree on SMS Spam Collection Dataset**
-  ![Decision Tree Confusion Matrix (SMS Spam Collection)](images/Decision Tree Confusion Matrix SMSSpamCollection.jpg)
+- **Decision Tree on SMS Spam Collection Dataset**  
+  ![Decision Tree Confusion Matrix (SMS Spam Collection)](images/Decision%20Tree%20Confusion%20Matrix%20SMSSpamCollection.jpg)
 
-- **Decision Tree on Enron Dataset**
-  ![Decision Tree Confusion Matrix (Enron)](images/Decision Tree Confusion Matrix Enron.jpg)
+- **Decision Tree on Enron Dataset**  
+  ![Decision Tree Confusion Matrix (Enron)](images/Decision%20Tree%20Confusion%20Matrix%20Enron.jpg)
 
 ### Impact of Tree Depth on Accuracy
-- **Depth (1 to 20)**
-  ![Effect of Tree Depth (1 to 20)](images/Effect of Tree Depth (1 to 20) on Accuracy.jpg)
+- **Depth (1 to 20)**  
+  ![Effect of Tree Depth (1 to 20)](images/Effect%20of%20Tree%20Depth%20(1%20to%2020)%20on%20Accuracy.jpg)
 
-- **Depth (1 to 100)**
-  ![Effect of Tree Depth (1 to 100)](images/Effect of Tree (1 to 100) on Accuracy.jpg)
+- **Depth (1 to 100)**  
+  ![Effect of Tree Depth (1 to 100)](images/Effect%20of%20Tree%20(1%20to%20100)%20on%20Accuracy.jpg)
 
 ---
 
@@ -144,9 +144,7 @@ project-directory/
 |— docs/               # Research paper and additional documents
 |— .gitignore          # Excludes unnecessary files
 ```
-
 ---
-
 ## ⚙️ Requirements
 
 Install required Python libraries using:
