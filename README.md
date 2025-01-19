@@ -131,7 +131,7 @@ pip install -r requirements.txt
 ## 📈 Visual Insights
 ### Examples of Visualizations:
 1. **Confusion Matrix - Enron Dataset**:
-   ![Confusion Matrix](https://github.com/saberfazliahmadi/spam-detection-tfidf/blob/main/images/confusion_matrix_enron.jpg)
+   ![Confusion Matrix](https://github.com/saberfazliahmadi/spam-detection-tfidf/blob/main/images/confusion_matrix_enron.png)
 2. **Accuracy Comparison Across Models**:
    ![Accuracy Comparison](https://github.com/saberfazliahmadi/spam-detection-tfidf/blob/main/images/accuracy_comparison.jpg)
 3. **Effect of Tree Depth on Accuracy**:
