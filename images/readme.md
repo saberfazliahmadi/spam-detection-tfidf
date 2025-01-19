@@ -7,11 +7,11 @@ This folder contains visualizations and graphs generated during the implementati
   ![SMSSPAMCOLLECTION Class Distribution](https://github.com/saberfazliahmadi/spam-detection-tfidf/blob/main/images/SMSSPAMCOLLECTION%20CLass%20Distribution.jpg)
 
 - **Enron Dataset**  
-  ![Enron Class Distribution](images/Enron%20Class%20Distribution.jpg)
+  ![Enron Class Distribution](https://github.com/saberfazliahmadi/spam-detection-tfidf/blob/main/images/Enron%20Class%20Distribution.jpg)
 
 ### Text Length Distributions
 - **SMS Spam Collection Dataset**  
-  ![SMS Spam Collection Text Length Distribution](images/SMSSpamCollection%20Text%20Lenght%20Distribution.jpg)
+  ![SMS Spam Collection Text Length Distribution](https://github.com/saberfazliahmadi/spam-detection-tfidf/blob/main/images/SMSSpamCollection%20Text%20Lenght%20Distribution.jpg)
 
 - **Enron Dataset**  
   ![Enron Text Length Distribution](images/Enron%20Text%20Length%20Distribution.jpg)
