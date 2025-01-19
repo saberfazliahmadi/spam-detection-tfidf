@@ -1,54 +1,76 @@
-# 📧 Spam Detection Using Decision Tree and TF-IDF
+# 📧 Spam Detection Using Logistic Regression, Decision Tree, and TF-IDF
 
-## 📌 Overview
-This project presents a **text classification framework** to detect spam messages using **TF-IDF (Term Frequency-Inverse Document Frequency)** for feature extraction and a **Decision Tree Classifier** for prediction. The framework achieves a high accuracy of **96.50%** by balancing model complexity to optimize performance. 
+## 📀 Overview
+This project delivers a **robust spam detection framework** that leverages **TF-IDF (Term Frequency-Inverse Document Frequency)** for text feature extraction and employs **Logistic Regression** and **Decision Tree Classifiers** for message classification. The model is evaluated on two datasets—**SMS Spam Collection** and **Enron Spam Dataset**—to ensure generalizability across different data sources. With advanced preprocessing, cross-dataset evaluation, and insightful visualizations, this project achieves high accuracy while offering a clear path for further improvement.
 
 ---
 
 ## 🚀 Key Features
-- **Robust Text Preprocessing**:
+- **Advanced Text Preprocessing**:
+  - Lowercasing
   - Tokenization
   - Stop-word removal
   - Punctuation removal
 - **TF-IDF Vectorization**:
-  - Converts raw text into numerical features for classification.
-- **Decision Tree Classifier**:
-  - Tuned for optimal performance, analyzing tree depths to prevent overfitting and underfitting.
+  - Converts raw text into meaningful numerical features that represent word importance within the dataset.
+- **Classification Models**:
+  - **Logistic Regression** for establishing a baseline.
+  - **Decision Tree Classifier** with hyperparameter tuning for improved performance.
+- **Cross-Dataset Generalization**:
+  - Trains on one dataset (e.g., Enron) and evaluates on another (e.g., SMS Spam Collection) to test robustness.
 - **Comprehensive Evaluation**:
   - Metrics: Confusion Matrix, Classification Report, Accuracy.
-- **Visualization**:
-  - Graphs depicting the impact of tree depth on classification accuracy.
+- **Visualizations**:
+  - Heatmaps for confusion matrices.
+  - Bar plots comparing accuracy across models and datasets.
+  - Graphs demonstrating the relationship between tree depth and classification accuracy.
 
 ---
 
-## 📂 Dataset
-The **SMS Spam Collection** dataset is used, a widely recognized benchmark for spam detection.  
+## 📃 Datasets
+### 1. **SMS Spam Collection**:
+- **Overview**: A widely recognized dataset containing labeled SMS messages as spam or ham.
 - **Statistics**:
-  - Total messages: 5,574  
-  - Spam: 13.4%  
-  - Ham (non-spam): 86.6%  
+  - Total messages: 5,574
+  - Spam: 13.4%
+  - Ham (non-spam): 86.6%
+- 🔗 [Download Link](https://archive.ics.uci.edu/ml/datasets/sms+spam+collection)
 
-📥 **Dataset Link**: [SMS Spam Collection Dataset](https://archive.ics.uci.edu/ml/datasets/sms+spam+collection)  
-📁 **Instructions**: Save the dataset in the `dataset/` directory.
+### 2. **Enron Spam Dataset**:
+- **Overview**: A large dataset containing email messages labeled as spam or ham, suitable for email spam detection.
+- **Statistics**:
+  - Total messages: 33,716
+  - Approx. Spam: 50%
+- 🔗 [Download Link](https://www.kaggle.com/datasets/venky73/enron-spam-mails)
+
+📁 **Instructions**: Save both datasets in the `dataset/` directory of the project.
 
 ---
 
 ## 📚 Methodology
 ### 1. **Text Preprocessing**:
-   - Tokenization: Breaks text into words.
-   - Stop-word Removal: Eliminates irrelevant words like "and," "the."
-   - Punctuation Removal: Cleans special characters.
+   - **Lowercasing**: Ensures uniformity by converting all text to lowercase.
+   - **Tokenization**: Breaks sentences into individual words.
+   - **Stop-word Removal**: Removes common but irrelevant words (e.g., "and," "the").
+   - **Punctuation Removal**: Cleans special characters to focus on meaningful words.
 ### 2. **Feature Extraction**:
-   - TF-IDF Vectorization: Computes the significance of words in the dataset.
-### 3. **Classification**:
+   - **TF-IDF Vectorization**:
+     - Assigns a weight to each word based on its importance in the message and across the dataset.
+     - Captures both term frequency (importance within a message) and inverse document frequency (rarity across the dataset).
+### 3. **Classification Models**:
+   - **Logistic Regression**:
+     - A linear model for establishing baseline performance.
+     - Efficient and interpretable.
    - **Decision Tree Classifier**:
-     - Non-parametric model tuned for optimal depth.
-     - Tested across depths from 1 to 100 to balance complexity and performance.
+     - A non-parametric model tuned for depth and split criteria using **Grid Search**.
+     - Balances underfitting and overfitting by analyzing tree depth.
+### 4. **Cross-Dataset Evaluation**:
+   - Trains on one dataset (e.g., Enron) and evaluates on another (e.g., SMS Spam Collection) to assess generalizability.
 
 ---
 
 ## ⚙️ Requirements
-Install necessary Python libraries:
+Install the necessary Python libraries using:
 ```bash
 pip install -r requirements.txt
 ```
@@ -58,26 +80,29 @@ pip install -r requirements.txt
 - `numpy`
 - `scikit-learn`
 - `matplotlib`
+- `seaborn`
 - `nltk`
 
 ---
 
-## 📁 Project Structure
-- **`notebook.ipynb`**: Contains code implementation and analysis.
-- **`dataset/`**: Directory for the dataset.
+## 🗂 Project Structure
+- **`notebook.ipynb`**: Contains code implementation and detailed analysis.
+- **`dataset/`**: Directory for datasets.
 - **`README.md`**: Project documentation.
-- **`requirements.txt`**: Python dependencies.
-- **`.gitignore`**: Excludes unnecessary files.
+- **`requirements.txt`**: List of dependencies for easy installation.
+- **`images/`**: Stores visualizations generated by the notebook.
+- **`docs/`**: Additional documentation, including a research paper.
+- **`.gitignore`**: Excludes unnecessary files from version control.
 
 ---
 
-## 🛠️ How to Use
+## 🔧 How to Use
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/saberfazliahmadi/spam-detection-tfidf.git
    cd spam-detection-tfidf
    ```
-2. **Download Dataset**: Save the SMS Spam Collection in the `dataset/` folder.
+2. **Download Datasets**: Save the datasets in the `dataset/` folder.
 3. **Run Notebook**:
    - Launch Jupyter Notebook:
      ```bash
@@ -85,54 +110,58 @@ pip install -r requirements.txt
      ```
    - Open `notebook.ipynb` and execute cells to:
      - Preprocess data.
-     - Train and evaluate the Decision Tree Classifier.
-     - Visualize the results.
+     - Train and evaluate models.
+     - Visualize results.
 
 ---
 
 ## 📊 Results
 ### Key Findings:
-- **Optimal Tree Depth**: 20  
-- **Accuracy**: 96.50%  
-
-Graphs illustrate the balance between model complexity and performance, highlighting the impact of increasing tree depth.
-
----
-
-## 🌟 Next Steps
-- **Enhancements**:
-  - Experiment with Random Forest, SVM, and BERT embeddings.
-  - Scale the model to larger datasets like the Enron-Spam Corpus.
-- **Advanced Techniques**:
-  - Use feature representations like Word2Vec, GloVe, or BERT.
+1. **Logistic Regression**:
+   - **SMS Spam Collection Accuracy**: 96.50%
+   - **Enron Dataset Accuracy**: 95.20%
+2. **Decision Tree Classifier**:
+   - **SMS Spam Collection Accuracy**: 95.90%
+   - **Enron Dataset Accuracy**: 94.80%
+3. **Cross-Dataset Evaluation**:
+   - Training on Enron and testing on SMS Spam Collection achieves an accuracy of **93.75%**, showcasing strong generalizability.
 
 ---
 
-## 📜 License
-Licensed under the **MIT License**. See the LICENSE file for details.
+## 📈 Visual Insights
+### Examples of Visualizations:
+1. **Confusion Matrix - Enron Dataset**:
+   ![Confusion Matrix](https://github.com/saberfazliahmadi/spam-detection-tfidf/blob/main/images/confusion_matrix_enron.jpg)
+2. **Accuracy Comparison Across Models**:
+   ![Accuracy Comparison](https://github.com/saberfazliahmadi/spam-detection-tfidf/blob/main/images/accuracy_comparison.jpg)
+3. **Effect of Tree Depth on Accuracy**:
+   ![Tree Depth Impact](https://github.com/saberfazliahmadi/spam-detection-tfidf/blob/main/images/Effect_of_Tree_Depth_on_Accuracy.jpg)
 
 ---
 
-## 📖 Research Paper
-The detailed research paper for this project is available:  
-[Spam Detection Using Decision Tree and TF-IDF](https://github.com/saberfazliahmadi/spam-detection-tfidf/blob/main/docs/Spam_Detection_Paper.md)
+## 🌟 Future Work
+- **Model Enhancements**:
+  - Experiment with Random Forest, Support Vector Machines (SVM), and Transformers like BERT.
+  - Explore ensemble methods for improved accuracy.
+- **Feature Extraction Improvements**:
+  - Leverage advanced embeddings like Word2Vec, GloVe, or Sentence-BERT.
+- **Scalability**:
+  - Apply the framework to larger datasets and real-world spam detection systems.
 
 ---
 
-## ✍️ Authors
-- **<a href="https://github.com/saberfazliahmadi" >Saber Fazliahmadi</a>**  
+## 📄 License
+This project is licensed under the **MIT License**. See the LICENSE file for details.
+
+---
+
+## 🔖 Research Paper
+A detailed research paper elaborating on the methodology and findings is available:  
+[Spam Detection Using TF-IDF and Decision Tree](https://github.com/saberfazliahmadi/spam-detection-tfidf/blob/main/docs/Spam_Detection_Paper.md)
+
+---
+
+## 🖐️ Authors
+- **[Saber Fazliahmadi](https://github.com/saberfazliahmadi)**
 - **Muhammad Usman Hussain**
 
----
-
-## 📉 Visual Insights
-### Accuracy vs Tree Depth
-Below is an example of visualizations available in the notebook:
-
-- **Training vs Testing Accuracy**:
-  ![Tree Depth vs Accuracy](https://github.com/saberfazliahmadi/spam-detection-tfidf/blob/main/images/Tree_Depth_vs_Accuracy.jpg)
-
-- **Effect of Tree Depth on Accuracy 1-100**:
-  ![Tree Depth Impact](https://github.com/saberfazliahmadi/spam-detection-tfidf/blob/main/images/Effect_of_Tree_Depth_on_Accuracy_1_100.jpg)
-
-```
