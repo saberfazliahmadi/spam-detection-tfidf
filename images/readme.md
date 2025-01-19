@@ -14,7 +14,7 @@ This folder contains visualizations and graphs generated during the implementati
   ![SMS Spam Collection Text Length Distribution](https://github.com/saberfazliahmadi/spam-detection-tfidf/blob/main/images/SMSSpamCollection%20Text%20Lenght%20Distribution.jpg)
 
 - **Enron Dataset**  
-  ![Enron Text Length Distribution](images/Enron%20Text%20Length%20Distribution.jpg)
+  ![Enron Text Length Distribution](https://github.com/saberfazliahmadi/spam-detection-tfidf/blob/main/images/Enron%20Text%20Length%20Distribution.jpg)
 
 ### Accuracy Results by Model
 | Model                | Dataset                 | Accuracy (%) |
@@ -26,16 +26,16 @@ This folder contains visualizations and graphs generated during the implementati
 
 ### Confusion Matrices
 - **Logistic Regression on SMS Spam Collection Dataset**  
-  ![Logistic Regression Confusion Matrix (SMS Spam Collection)](images/Logistic%20Regression%20Confusion%20Matrix%20SMSSpamCollection.jpg)
+  ![Logistic Regression Confusion Matrix (SMS Spam Collection)](https://github.com/saberfazliahmadi/spam-detection-tfidf/blob/main/images/Logistic%20Regression%20Confusion%20Matrix%20SMSSpamCollection.jpg)
 
 - **Logistic Regression on Enron Dataset**  
-  ![Logistic Regression Confusion Matrix (Enron)](images/Logistic%20Regression%20Confusion%20Matrix.jpg)
+  ![Logistic Regression Confusion Matrix (Enron)](https://github.com/saberfazliahmadi/spam-detection-tfidf/blob/main/images/Logistic%20Regression%20Confusion%20Matrix.jpg)
 
 - **Decision Tree on SMS Spam Collection Dataset**  
-  ![Decision Tree Confusion Matrix (SMS Spam Collection)](images/Decision%20Tree%20Confusion%20Matrix%20SMSSpamCollection.jpg)
+  ![Decision Tree Confusion Matrix (SMS Spam Collection)](https://github.com/saberfazliahmadi/spam-detection-tfidf/blob/main/images/Decision%20Tree%20Confusion%20Matrix%20SMSSpamCollection.jpg)
 
 - **Decision Tree on Enron Dataset**  
-  ![Decision Tree Confusion Matrix (Enron)](images/Decision%20Tree%20Confusion%20Matrix%20Enron.jpg)
+  ![Decision Tree Confusion Matrix (Enron)](https://github.com/saberfazliahmadi/spam-detection-tfidf/blob/main/images/Decision%20Tree%20Confusion%20Matrix%20Enron.jpg)
 
 ### Impact of Tree Depth on Accuracy
 - **Depth (1 to 20)**  
@@ -43,7 +43,7 @@ This folder contains visualizations and graphs generated during the implementati
 
 
 - **Depth (1 to 100)**  
-  ![Effect of Tree Depth (1 to 100)](images/Effect%20of%20Tree%20(1%20to%20100)%20on%20Accuracy.jpg)
+  ![Effect of Tree Depth (1 to 100)](https://github.com/saberfazliahmadi/spam-detection-tfidf/blob/main/images/Effect%20of%20Tree%20(1%20to%20100)%20on%20Accuracy.jpg)
 
 ---
 
