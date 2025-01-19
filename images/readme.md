@@ -2,10 +2,6 @@
 
 This folder contains visualizations and graphs generated during the implementation and analysis of the **Spam Detection Using Decision Tree and TF-IDF** project.
 
-## 📈 Contents
-
-## 📊 Results
-
 ### Class Distributions
 - **SMS Spam Collection Dataset**  
   ![SMSSPAMCOLLECTION Class Distribution](https://github.com/saberfazliahmadi/spam-detection-tfidf/blob/main/images/SMSSPAMCOLLECTION%20CLass%20Distribution.jpg)
