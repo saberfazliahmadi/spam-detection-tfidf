@@ -162,8 +162,3 @@ pip install -r requirements.txt
 - Scale the framework for larger, real-world spam detection systems.
 
 ---
-
-## 👍 Authors
-
-- **[Saber Fazliahmadi](https://github.com/saberfazliahmadi)**
-- **Muhammad Usman Hussain**
