@@ -143,6 +143,72 @@ The project depends on these Python libraries:
 
 You can find the pinned dependency list in `requirements.txt`.
 
+## Visual results and model analysis
+
+The following figures show the core observations from the project. They highlight class balance, message length patterns, model accuracy, and classification errors.
+
+### Class distribution
+
+The class distribution plot shows how imbalanced the SMS dataset is, with ham messages dominating the dataset and spam forming a smaller minority.
+
+- SMS Spam Collection dataset
+
+![SMS Spam Collection class distribution](images/SMSSPAMCOLLECTION%20CLass%20Distribution.jpg)
+
+- Enron dataset
+
+![Enron dataset class distribution](images/Enron%20Class%20Distribution.jpg)
+
+### Text length distribution
+
+These plots compare message length distributions across datasets and help explain why a model trained on one domain may behave differently on another.
+
+- SMS Spam Collection text length distribution
+
+![SMS Spam Collection text length distribution](images/SMSSpamCollection%20Text%20Lenght%20Distribution.jpg)
+
+- Enron text length distribution
+
+![Enron text length distribution](images/Enron%20Text%20Length%20Distribution.jpg)
+
+### Accuracy comparison across models and datasets
+
+This chart compares the accuracy of Logistic Regression and Decision Tree models on the SMS and Enron datasets.
+
+![Accuracy comparison across models and datasets](images/accuracy_comparison.png)
+
+### Confusion matrices
+
+Confusion matrices show how often the model correctly or incorrectly classifies spam and ham messages.
+
+- Logistic Regression on SMS Spam Collection
+
+![Logistic Regression confusion matrix on SMS Spam Collection](images/Logistic%20Regression%20Confusion%20Matrix%20SMSSpamCollection.jpg)
+
+- Logistic Regression on Enron dataset
+
+![Logistic Regression confusion matrix on Enron dataset](images/Logistic%20Regression%20Confusion%20Matrix.jpg)
+
+- Decision Tree on SMS Spam Collection
+
+![Decision Tree confusion matrix on SMS Spam Collection](images/Decision%20Tree%20Confusion%20Matrix%20SMSSpamCollection.jpg)
+
+- Decision Tree on Enron dataset
+
+![Decision Tree confusion matrix on Enron dataset](images/Decision%20Tree%20Confusion%20Matrix%20Enron.jpg)
+
+### Effect of decision tree depth on accuracy
+
+The depth analysis shows how increasing the maximum tree depth influences model performance and when accuracy starts to plateau or degrade.
+
+- Tree depth from 1 to 20
+
+![Decision tree depth effect from 1 to 20](images/Effect%20of%20Tree%20%20Depth%20(1%20to%2020)%20on%20Accuracy.jpg)
+
+- Tree depth from 1 to 100
+
+![Decision tree depth effect from 1 to 100](images/Effect%20of%20Tree%20(1%20to%20100)%20on%20Accuracy.jpg)
+
 ## Key results from the project
 
 The notebook output includes the following model performance summaries.
