@@ -1,164 +1,172 @@
-# 📧 Spam Detection Using Logistic Regression, Decision Tree, and TF-IDF
+# Spam Detection Using TF-IDF and Decision Trees
 
-## 🖀 Overview
-Spam messages and emails pose a persistent challenge to communication efficiency and data security. This project aims to combat spam by developing a **robust and scalable spam detection framework** that combines **TF-IDF feature extraction** with two powerful machine learning models: **Logistic Regression** and **Decision Tree Classifiers**.
+A practical machine learning project for detecting spam in text messages using TF-IDF features and decision tree classification. The project focuses on the classic SMS spam classification problem, with experimentation on both SMS and email-style spam datasets to compare model behavior and evaluate generalization.
 
-We conducted experiments on two datasets: **SMS Spam Collection** and **Enron Spam Dataset**, assessing the framework's performance, generalizability, and efficiency. The project highlights actionable insights into cross-dataset generalization, evaluates key model metrics, and provides detailed visualizations to enhance understanding.
+## Overview
 
----
+Spam detection is a common text classification task: given a message, the model should decide whether it is legitimate (`ham`) or unwanted (`spam`). This project demonstrates a straightforward workflow built around:
 
-## 🚀 Key Features
+- text preprocessing
+- TF-IDF feature extraction
+- model training and evaluation
+- comparison of classifier performance across datasets
 
-### Advanced Preprocessing
-- **Lowercasing**: Ensures uniform text format by converting all characters to lowercase.
-- **Tokenization**: Splits text into meaningful units (words/tokens).
-- **Stop-word Removal**: Eliminates common, non-informative words (e.g., "and," "the").
-- **Punctuation Removal**: Cleans the data by removing special characters and punctuation marks.
+The repository includes a notebook-based analysis, the SMS spam dataset, supporting documentation, and generated visualizations.
 
-### TF-IDF Vectorization
-- Converts text into numerical features representing word importance within documents and the entire dataset.
-- Captures both local (term frequency) and global (inverse document frequency) importance of words, enhancing feature quality.
+## Project goals
 
-### Classification Models
-- **Logistic Regression**:
-  - Establishes a strong baseline with a simple yet effective linear model.
-  - Advantages: Fast, interpretable, and scalable.
-- **Decision Tree Classifier**:
-  - Employs tree-based learning with optimized hyperparameters using **Grid Search**.
-  - Balances underfitting and overfitting, adapting well to non-linear patterns.
+This project was designed to:
 
-### Model Evaluation and Cross-Dataset Generalization
-- Evaluates metrics like **accuracy**, **precision**, **recall**, **F1-score**, and **confusion matrices**.
-- Demonstrates cross-dataset generalization by training on one dataset (e.g., Enron) and testing on another (e.g., SMS Spam Collection).
+- build a spam detector using TF-IDF vectors and a decision tree classifier
+- compare performance with logistic regression as a baseline
+- evaluate model behavior on multiple datasets
+- visualize class balance, text-length patterns, and model accuracy
+- document the workflow in a clear, reproducible way
 
----
+## Data
 
-## 📜 Datasets
+### SMS Spam Collection
 
-### 1. **SMS Spam Collection**
-- **Overview**: A benchmark dataset with SMS messages labeled as spam or ham (non-spam).
-- **Statistics**:
-  - Total messages: 5,572
-  - Spam: 13.4%
-  - Ham: 86.6%
-- **Source**: [Download Here](https://archive.ics.uci.edu/ml/datasets/sms+spam+collection)
+This project includes the widely used SMS Spam Collection dataset in the repository:
 
-### 2. **Enron Spam Dataset**
-- **Overview**: A large dataset of labeled emails, suitable for evaluating email spam detection systems.
-- **Statistics**:
-  - Total messages: 33,716
-  - Approx. Spam: 50%
-- **Source**: [Download Here](https://github.com/MWiechmann/enron_spam_data?tab=readme-ov-file)
+- File: `data/SMSSpamCollection.csv`
+- Purpose: SMS spam vs. ham classification
+- Label distribution: roughly 13.4% spam, 86.6% ham
 
-### Instructions for Use
-Save both datasets in the `dataset/` directory of the project.
+### Enron spam dataset
 
----
+The project also references the Enron spam corpus for cross-dataset evaluation and generalization experiments. This dataset is used in the analysis notebooks and discussion documents but is not bundled in this repository by default.
 
-## 📚 Methodology
+## Workflow
 
-### 1. Text Preprocessing
-- Converts raw text into a cleaner, structured form for analysis.
+The analysis follows a standard ML pipeline:
 
-### 2. Feature Extraction
-- **TF-IDF Vectorization**: Generates weighted numerical features for each word based on its frequency and rarity.
+1. Load raw text data
+2. Clean and normalize the messages
+3. Split into training and testing sets
+4. Convert text into TF-IDF features
+5. Train a decision tree classifier
+6. Compare results against logistic regression
+7. Measure accuracy, precision, recall, F1-score, and confusion matrices
 
-### 3. Model Development
-- **Logistic Regression**: Trained on TF-IDF features as a baseline model.
-- **Decision Tree Classifier**: Evaluated with different depths and split criteria to optimize performance.
+## Repository structure
 
-### 4. Cross-Dataset Evaluation
-- Validates model generalizability by training on one dataset and testing on another.
-
----
-
-Here's the updated README code that incorporates all the listed photos into the appropriate sections:
-
----
-
-## 📊 Results
-
-### Class Distributions
-- **SMS Spam Collection Dataset**  
-  ![SMSSPAMCOLLECTION Class Distribution](https://github.com/saberfazliahmadi/spam-detection-tfidf/blob/main/images/SMSSPAMCOLLECTION%20CLass%20Distribution.jpg)
-
-- **Enron Dataset**  
-  ![Enron Class Distribution](images/Enron%20Class%20Distribution.jpg)
-
-### Text Length Distributions
-- **SMS Spam Collection Dataset**  
-  ![SMS Spam Collection Text Length Distribution](images/SMSSpamCollection%20Text%20Lenght%20Distribution.jpg)
-
-- **Enron Dataset**  
-  ![Enron Text Length Distribution](images/Enron%20Text%20Length%20Distribution.jpg)
-
-### Accuracy Results by Model
-| Model                | Dataset                 | Accuracy (%) |
-|----------------------|-------------------------|--------------|
-| Logistic Regression  | SMS Spam Collection    | 95.96        |
-| Logistic Regression  | Enron Dataset          | 49.99        |
-| Decision Tree        | SMS Spam Collection    | 95.87        |
-| Decision Tree        | Enron Dataset          | 51.60        |
-
-### Confusion Matrices
-- **Logistic Regression on SMS Spam Collection Dataset**  
-  ![Logistic Regression Confusion Matrix (SMS Spam Collection)](images/Logistic%20Regression%20Confusion%20Matrix%20SMSSpamCollection.jpg)
-
-- **Logistic Regression on Enron Dataset**  
-  ![Logistic Regression Confusion Matrix (Enron)](images/Logistic%20Regression%20Confusion%20Matrix.jpg)
-
-- **Decision Tree on SMS Spam Collection Dataset**  
-  ![Decision Tree Confusion Matrix (SMS Spam Collection)](images/Decision%20Tree%20Confusion%20Matrix%20SMSSpamCollection.jpg)
-
-- **Decision Tree on Enron Dataset**  
-  ![Decision Tree Confusion Matrix (Enron)](images/Decision%20Tree%20Confusion%20Matrix%20Enron.jpg)
-
-### Impact of Tree Depth on Accuracy
-- **Depth (1 to 20)**  
- ![Effect of Tree Depth (1 to 20) on Accuracy](https://github.com/saberfazliahmadi/spam-detection-tfidf/blob/main/images/Effect%20of%20Tree%20%20Depth%20(1%20to%2020)%20on%20Accuracy.jpg)
-
-
-- **Depth (1 to 100)**  
-  ![Effect of Tree Depth (1 to 100)](images/Effect%20of%20Tree%20(1%20to%20100)%20on%20Accuracy.jpg)
-
----
-
-### Updated Project Structure
-
+```text
+spam-detection-tfidf/
+├── README.md
+├── requirements.txt
+├── data/
+│   └── SMSSpamCollection.csv
+├── notebooks/
+│   ├── spam_detection_enron_and_SMSSpamCollection_analysis.ipynb
+│   ├── text_classification_tfidf.ipynb
+│   └── The_Final_Version_before_our_presentation_for_spam_detection_enron_and_SMSSpamCollection_datasets_analysis.ipynb
+├── docs/
+│   └── Spam_Detection_Paper.md
+├── images/
+│   ├── accuracy_comparison.png
+│   ├── confusion_matrix_enron.png
+│   ├── ...
+│   └── readme.md
+├── .gitignore
+└── LICENSE (if present in your fork)
 ```
-project-directory/
-|— notebook.ipynb       # Contains code and detailed analysis
-|— dataset/            # Directory for datasets
-|— images/             # Stores all visualizations
-    |— SMSSPAMCOLLECTION Class Distribution.jpg
-    |— Enron Class Distribution.jpg
-    |— SMSSpamCollection Text Lenght Distribution.jpg
-    |— Enron Text Length Distribution.jpg
-    |— Logistic Regression Confusion Matrix SMSSpamCollection.jpg
-    |— Logistic Regression Confusion Matrix.jpg
-    |— Decision Tree Confusion Matrix SMSSpamCollection.jpg
-    |— Decision Tree Confusion Matrix Enron.jpg
-    |— Effect of Tree Depth (1 to 20) on Accuracy.jpg
-    |— Effect of Tree (1 to 100) on Accuracy.jpg
-|— README.md           # Project documentation
-|— requirements.txt    # Dependencies for installation
-|— docs/               # Research paper and additional documents
-|— .gitignore          # Excludes unnecessary files
-```
----
-## ⚙️ Requirements
 
-Install required Python libraries using:
+## Getting started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/saberfazliahmadi/spam-detection-tfidf.git
+cd spam-detection-tfidf
+```
+
+### 2. Create a virtual environment (optional but recommended)
+
+```bash
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+```
+
+### 3. Install dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
----
+### 4. Run the notebook
 
-## 🌟 Future Work
+Open the Jupyter notebook in `notebooks/` and execute the cells in order:
 
-- Incorporate advanced models such as **Random Forests**, **Support Vector Machines (SVMs)**, and **Transformers (e.g., BERT)**.
-- Explore embeddings like **Word2Vec**, **GloVe**, and **Sentence-BERT** for better feature representation.
-- Scale the framework for larger, real-world spam detection systems.
+```bash
+jupyter notebook notebooks/
+```
 
----
+## Requirements
+
+The project depends on the following Python packages:
+
+- pandas
+- numpy
+- scikit-learn
+- matplotlib
+- nltk
+
+See `requirements.txt` for the full list.
+
+## Model performance summary
+
+Based on the repository’s analysis and generated plots:
+
+| Model | Dataset | Accuracy |
+|---|---:|---:|
+| Logistic Regression | SMS Spam Collection | 95.96% |
+| Decision Tree | SMS Spam Collection | 95.87% |
+| Logistic Regression | Enron Dataset | 49.99% |
+| Decision Tree | Enron Dataset | 51.60% |
+
+This suggests the model performs strongly on the SMS dataset, while cross-dataset generalization to the Enron corpus is more challenging and may require additional tuning or different feature engineering strategies.
+
+## Evaluation metrics
+
+The project evaluates the classifiers using:
+
+- accuracy
+- precision
+- recall
+- F1-score
+- confusion matrices
+- class distribution and text-length visualizations
+
+## Key files
+
+- `notebooks/text_classification_tfidf.ipynb` — primary TF-IDF and decision tree workflow
+- `notebooks/spam_detection_enron_and_SMSSpamCollection_analysis.ipynb` — broader experimental analysis
+- `docs/Spam_Detection_Paper.md` — write-up explaining methodology and findings
+- `images/` — generated charts and model diagnostics
+
+## Why this project is useful
+
+This repository is a clear beginner-friendly example of:
+
+- text classification with TF-IDF
+- classical machine learning for NLP
+- model evaluation in a realistic classification problem
+- visualization of results for communication and reporting
+
+## Future directions
+
+Possible improvements include:
+
+- experimenting with random forests, SVMs, and boosting methods
+- tuning the decision tree depth and other hyperparameters
+- testing more advanced text representations such as Word2Vec, GloVe, or BERT embeddings
+- benchmarking on larger and more diverse spam corpora
+
+## Contributing
+
+Pull requests and suggestions are welcome. If you improve the notebook, add more experiments, or improve the documentation, feel free to contribute.
+
+## Acknowledgements
+
+This project uses public spam datasets and standard Python machine learning tools to illustrate a practical text-classification workflow.
