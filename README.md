@@ -1,10 +1,28 @@
 # Spam Detection with TF-IDF and Decision Trees
 
-A notebook-driven machine learning project for classifying spam vs. ham text using TF-IDF feature extraction and decision tree modeling. The repository explores the classic SMS spam detection problem and also compares model behavior on a second dataset (Enron spam data) to evaluate robustness and transferability.
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="images/Spam_Detection_Across_Text_Domains_Slide_1.png" width="300" alt="Slide 1" /></td>
+      <td><img src="images/Spam_Detection_Across_Text_Domains_(2)_-_Slide_2.png" width="300" alt="Slide 2" /></td>
+      <td><img src="images/Spam_Detection_Across_Text_Domains_(2)_-_Slide_3.png" width="300" alt="Slide 3" /></td>
+    </tr>
+    <tr>
+      <td><img src="images/Spam_Detection_Across_Text_Domains_(2)_-_Slide_4.png" width="300" alt="Slide 4" /></td>
+      <td><img src="images/Spam_Detection_Across_Text_Domains_(2)_-_Slide_5.png" width="300" alt="Slide 5" /></td>
+      <td><img src="images/Spam_Detection_Across_Text_Domains_(2)_-_Slide_6.png" width="300" alt="Slide 6" /></td>
+    </tr>
+    <tr>
+      <td colspan="3" align="center"><img src="images/Spam_Detection_Machine_Learning_Performance.png" width="700" alt="Machine learning performance" /></td>
+    </tr>
+  </table>
+</div>
+
+A notebook-driven machine learning project for classifying spam vs. ham text using TF-IDF feature extraction and decision tree modeling. The repository explores the classic SMS spam detection problem across multiple datasets and compares model behavior under different conditions.
 
 ## Why this project exists
 
-Spam filtering is a highly practical text classification task: the goal is to automatically identify unsolicited or malicious messages while preserving legitimate content. This project demonstrates a complete workflow for building a spam detector using classical NLP and machine learning techniques:
+Spam filtering is a highly practical text classification task: the goal is to automatically identify unsolicited or malicious messages while preserving legitimate content. This project demonstrates how to:
 
 - clean and normalize raw text
 - transform text into numeric features using TF-IDF
@@ -44,7 +62,7 @@ Observed distribution from the notebooks:
 
 ### 2. Enron spam dataset
 
-The repository also analyzes the Enron spam corpus to test how well a model trained on one dataset transfers to another. The notebook loads this dataset from a local Google Drive path, and the project instructions show that it is used for cross-dataset evaluation experiments.
+The repository also analyzes the Enron spam corpus to test how well a model trained on one dataset transfers to another. The notebook loads this dataset from a local Google Drive path, and the project examines how the same modeling pipeline behaves under a very different domain.
 
 Observed distribution from the notebook output:
 
@@ -233,7 +251,7 @@ The notebook also tests a cross-dataset setting by training on Enron and testing
 
 - Cross-dataset accuracy: 34.10%
 
-This result suggests the model does not generalize well across datasets without additional tuning or more robust feature engineering. In other words, the SMS dataset and the Enron dataset differ enough in language patterns and distribution that a simple TF-IDF model struggles to transfer cleanly across them.
+This result suggests the model does not generalize well across datasets without additional tuning or more robust feature engineering. In other words, the SMS dataset and the Enron dataset differ in meaningful ways that matter for real-world spam detection.
 
 ## Evaluation metrics used
 
