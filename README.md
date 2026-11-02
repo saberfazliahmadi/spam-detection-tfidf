@@ -3,17 +3,17 @@
 <div align="center">
   <table>
     <tr>
-      <td><img src="images/Spam_Detection_Across_Text_Domains_Slide_1.png" width="300" alt="Slide 1" /></td>
-      <td><img src="images/Spam_Detection_Across_Text_Domains_(2)_-_Slide_2.png" width="300" alt="Slide 2" /></td>
-      <td><img src="images/Spam_Detection_Across_Text_Domains_(2)_-_Slide_3.png" width="300" alt="Slide 3" /></td>
+      <td><img src="images/Spam_Detection_Across_Text_Domains_Slide_1.png"" alt="Slide 1" /></td>
+      <td><img src="images/Spam_Detection_Across_Text_Domains_(2)_-_Slide_2.png" alt="Slide 2" /></td>
+      <td><img src="images/Spam_Detection_Across_Text_Domains_(2)_-_Slide_3.png"  alt="Slide 3" /></td>
     </tr>
     <tr>
-      <td><img src="images/Spam_Detection_Across_Text_Domains_(2)_-_Slide_4.png" width="300" alt="Slide 4" /></td>
-      <td><img src="images/Spam_Detection_Across_Text_Domains_(2)_-_Slide_5.png" width="300" alt="Slide 5" /></td>
-      <td><img src="images/Spam_Detection_Across_Text_Domains_(2)_-_Slide_6.png" width="300" alt="Slide 6" /></td>
+      <td><img src="images/Spam_Detection_Across_Text_Domains_(2)_-_Slide_4.png"  alt="Slide 4" /></td>
+      <td><img src="images/Spam_Detection_Across_Text_Domains_(2)_-_Slide_5.png"  alt="Slide 5" /></td>
+      <td><img src="images/Spam_Detection_Across_Text_Domains_(2)_-_Slide_6.png"  alt="Slide 6" /></td>
     </tr>
     <tr>
-      <td colspan="3" align="center"><img src="images/Spam_Detection_Machine_Learning_Performance.png" width="700" alt="Machine learning performance" /></td>
+      <td colspan="3" align="center"><img src="images/Spam_Detection_Machine_Learning_Performance.png" alt="Machine learning performance" /></td>
     </tr>
   </table>
 </div>
