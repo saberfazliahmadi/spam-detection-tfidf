@@ -1,21 +1,13 @@
 # Spam Detection with TF-IDF and Decision Trees
 
 <div align="center">
-  <table>
-    <tr>
-      <td><img src="images/Spam_Detection_Across_Text_Domains_Slide_1.png"" alt="Slide 1" /></td>
-      <td><img src="images/Spam_Detection_Across_Text_Domains_(2)_-_Slide_2.png" alt="Slide 2" /></td>
-      <td><img src="images/Spam_Detection_Across_Text_Domains_(2)_-_Slide_3.png"  alt="Slide 3" /></td>
-    </tr>
-    <tr>
-      <td><img src="images/Spam_Detection_Across_Text_Domains_(2)_-_Slide_4.png"  alt="Slide 4" /></td>
-      <td><img src="images/Spam_Detection_Across_Text_Domains_(2)_-_Slide_5.png"  alt="Slide 5" /></td>
-      <td><img src="images/Spam_Detection_Across_Text_Domains_(2)_-_Slide_6.png"  alt="Slide 6" /></td>
-    </tr>
-    <tr>
-      <td colspan="3" align="center"><img src="images/Spam_Detection_Machine_Learning_Performance.png" alt="Machine learning performance" /></td>
-    </tr>
-  </table>
+ <img src="images/Spam_Detection_Across_Text_Domains_Slide_1.png"" alt="Slide 1" />
+      <img src="images/Spam_Detection_Across_Text_Domains_(2)_-_Slide_2.png" alt="Slide 2" />
+      <img src="images/Spam_Detection_Across_Text_Domains_(2)_-_Slide_3.png"  alt="Slide 3" />
+      <img src="images/Spam_Detection_Across_Text_Domains_(2)_-_Slide_4.png"  alt="Slide 4" />
+      <img src="images/Spam_Detection_Across_Text_Domains_(2)_-_Slide_5.png"  alt="Slide 5" />
+      <img src="images/Spam_Detection_Across_Text_Domains_(2)_-_Slide_6.png"  alt="Slide 6" />
+      <img src="images/Spam_Detection_Machine_Learning_Performance.png" alt="Machine learning performance" />
 </div>
 
 A notebook-driven machine learning project for classifying spam vs. ham text using TF-IDF feature extraction and decision tree modeling. The repository explores the classic SMS spam detection problem across multiple datasets and compares model behavior under different conditions.
